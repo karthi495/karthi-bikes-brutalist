@@ -2,95 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Karthi Bike Showroom - Brutalist Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark forest green base */
+    --background: 150 30% 8%;
+    --foreground: 90 60% 85%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Cards - slightly lighter dark green */
+    --card: 150 25% 12%;
+    --card-foreground: 90 60% 90%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 150 25% 10%;
+    --popover-foreground: 90 60% 90%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Electric lime green */
+    --primary: 90 70% 50%;
+    --primary-foreground: 150 30% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Muted green */
+    --secondary: 150 20% 18%;
+    --secondary-foreground: 90 50% 80%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 150 15% 20%;
+    --muted-foreground: 90 30% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Bright lime */
+    --accent: 80 80% 55%;
+    --accent-foreground: 150 30% 8%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 150 20% 25%;
+    --input: 150 20% 20%;
+    --ring: 90 70% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom brutalist tokens */
+    --brutalist-lime: 80 85% 55%;
+    --brutalist-dark: 150 35% 6%;
+    --brutalist-forest: 150 40% 15%;
+    --brutalist-moss: 120 30% 25%;
+    --brutalist-highlight: 75 100% 60%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Shadows - harsh brutalist style */
+    --shadow-brutal: 8px 8px 0px hsl(var(--brutalist-dark));
+    --shadow-brutal-lg: 12px 12px 0px hsl(var(--brutalist-dark));
+    --shadow-brutal-accent: 6px 6px 0px hsl(var(--primary));
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar */
+    --sidebar-background: 150 30% 10%;
+    --sidebar-foreground: 90 60% 85%;
+    --sidebar-primary: 90 70% 50%;
+    --sidebar-primary-foreground: 150 30% 8%;
+    --sidebar-accent: 150 20% 18%;
+    --sidebar-accent-foreground: 90 60% 85%;
+    --sidebar-border: 150 20% 25%;
+    --sidebar-ring: 90 70% 50%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 150 30% 8%;
+    --foreground: 90 60% 85%;
+    --card: 150 25% 12%;
+    --card-foreground: 90 60% 90%;
+    --popover: 150 25% 10%;
+    --popover-foreground: 90 60% 90%;
+    --primary: 90 70% 50%;
+    --primary-foreground: 150 30% 8%;
+    --secondary: 150 20% 18%;
+    --secondary-foreground: 90 50% 80%;
+    --muted: 150 15% 20%;
+    --muted-foreground: 90 30% 60%;
+    --accent: 80 80% 55%;
+    --accent-foreground: 150 30% 8%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 150 20% 25%;
+    --input: 150 20% 20%;
+    --ring: 90 70% 50%;
+    --sidebar-background: 150 30% 10%;
+    --sidebar-foreground: 90 60% 85%;
+    --sidebar-primary: 90 70% 50%;
+    --sidebar-primary-foreground: 150 30% 8%;
+    --sidebar-accent: 150 20% 18%;
+    --sidebar-accent-foreground: 90 60% 85%;
+    --sidebar-border: 150 20% 25%;
+    --sidebar-ring: 90 70% 50%;
   }
 }
 
@@ -100,6 +101,111 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+}
+
+@layer components {
+  /* Brutalist noise texture overlay */
+  .brutalist-noise {
+    position: relative;
+  }
+
+  .brutalist-noise::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+
+  /* Brutalist grid pattern */
+  .brutalist-grid {
+    background-image: 
+      linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Harsh shadow on hover */
+  .brutalist-hover {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .brutalist-hover:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: var(--shadow-brutal-lg);
+  }
+
+  /* Brutalist button base */
+  .btn-brutalist {
+    @apply font-bold uppercase tracking-wider border-4 border-foreground px-8 py-4;
+    @apply transition-all duration-150 ease-out;
+    box-shadow: var(--shadow-brutal);
+  }
+
+  .btn-brutalist:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px hsl(var(--brutalist-dark));
+  }
+
+  .btn-brutalist:active {
+    transform: translate(0, 0);
+    box-shadow: none;
+  }
+
+  /* Diagonal stripes pattern */
+  .brutalist-stripes {
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      hsl(var(--border)) 10px,
+      hsl(var(--border)) 11px
+    );
+  }
+
+  /* Marquee animation */
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  /* Glitch effect */
+  @keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+  }
+
+  .glitch-hover:hover {
+    animation: glitch 0.3s ease-in-out;
+  }
+}
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 2px hsl(var(--primary));
+    color: transparent;
+  }
+
+  .text-stroke-thin {
+    -webkit-text-stroke: 1px hsl(var(--foreground));
+    color: transparent;
   }
 }
